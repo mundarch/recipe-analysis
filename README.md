@@ -51,7 +51,7 @@ Nutrition will always be a key part in our lives and finding faster, more conven
   frameborder="0"
 ></iframe>
 
-
+---
 
 <iframe
   src="assets/top_calories_recipes.html"
@@ -60,6 +60,15 @@ Nutrition will always be a key part in our lives and finding faster, more conven
   frameborder="0"
 ></iframe>
 
-The table above describes the trend of recipes with the most calories. These are predominantly desserts and high-fat indulgent meals suggesting calorie-dense foods often belong to these categories.
+The recipes with the most calories are predominantly desserts and high-fat indulgent meals suggesting calorie-dense foods often belong to these categories.
 
+---
 
+<iframe
+  src="assets/protein_by_fat.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+Recipes with higher saturated fat tend to exhibit a wider range of protein content, indicating that while high-fat recipes can be protein-rich, they also include options with lower protein levels.
