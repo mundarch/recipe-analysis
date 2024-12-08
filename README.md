@@ -32,16 +32,16 @@ Nutrition will always be a key part in our lives and finding faster, more conven
 
 # Data Cleaning Steps 
 
- **Left Merge of Datasets**:  
+**Left Merge of Datasets**:  
    The `recipes` dataset was merged with the `interactions` dataset using a left join. The left join ensured that every recipe in the `recipes` dataset was retained, even if it had no corresponding interactions (ratings) in the `interactions` dataset. This helped to integrate user ratings into the recipes dataset.
-
-2. **Handling Ratings of 0**:  
+   
+**Handling Ratings of 0**:  
    In the merged dataset, all `rating` values of `0` were replaced with `np.nan`. This step is required because a rating of `0` likely represents missing or invalid feedback rather than an actual rating. Treating these as missing values (NaN) ensures they don't skew the analysis, particularly when calculating averages.
 
-3. **Average Ratings per Recipe**:  
+**Average Ratings per Recipe**:  
    The average rating was calculated by grouping the data by `recipe_id` and taking the mean of the `rating` values. This provides a single summary statistic for each recipe's overall user feedback.
 
-4. **Adding Average Ratings Back**:  
+**Adding Average Ratings Back**:  
    The calculated average ratings were added back to the `recipes` dataset. This step enriches the recipes data by providing an aggregate measure of user preference, which can be used for further analysis or model training.
 
 <iframe
@@ -72,3 +72,28 @@ The recipes with the most calories are predominantly desserts and high-fat indul
 ></iframe>
 
 Recipes with higher saturated fat tend to exhibit a wider range of protein content, indicating that while high-fat recipes can be protein-rich, they also include options with lower protein levels.
+
+
+---
+
+<iframe
+  src="assets/top_10_healthiest_recipes.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+---
+
+In order to set our Prediction Model performing a regression analysis to predict the number of calories in a recipe based on its protein and carbohydrates content. The response variable is calories, and the features used for prediction are protein and carbohydrates. 
+
+We chose regression because the target variable, calories, is continuous and numeric. This approach will help identify how the macronutrient composition of a recipe influences its caloric content. 
+
+We evaluate the model using Mean Squared Error, which is sensitive to large errors, making it suitable for continuous variables where extreme values need to be penalized, and R-squared, which provides an interpretable measure of model performance.
+
+These metrics are preferred over others like F-1 or explained variance as they directly quantify the prediction error, which aligns with the goal of making accurate and practical calorie predictions.
+
+
+
+
+
