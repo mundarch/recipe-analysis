@@ -60,4 +60,6 @@ Nutrition will always be a key part in our lives and finding faster, more conven
   frameborder="0"
 ></iframe>
 
+The table above describes the trend of recipes with the most calories. These are predominantly desserts and high-fat indulgent meals suggesting calorie-dense foods often belong to these categories.
+
 
