@@ -1,4 +1,4 @@
-# recipe-analysis
+# Predicting Calories
 
 ## Introduction 
 
@@ -11,7 +11,7 @@ People are increasingly prioritizing their health when choosing what to eat. Ide
 
 ---
 
-## Dataset 
+## Relevant Dataset 
 
 | **Column Name**       | **Description**                                                                                      |
 |------------------------|-----------------------------------------------------------------------------------------------------|
@@ -66,7 +66,7 @@ The recipes with the most calories are predominantly desserts and high-fat indul
 ---
 
 <iframe
-  src="assets/protein_by_saturated_fat.html"
+  src="assets/protein_by_saturated_fat_category.html"
   width="800"
   height="600"
   frameborder="0"
