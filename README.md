@@ -44,6 +44,7 @@ Nutrition will always be a key part in our lives and finding faster, more conven
 **Adding Average Ratings Back**:  
    The calculated average ratings were added back to the `recipes` dataset. This step enriches the recipes data by providing an aggregate measure of user preference, which can be used for further analysis or model training.
 
+
 <iframe
   src="assets/recipes_head.html"
   width="800"
@@ -82,6 +83,8 @@ Recipes with higher saturated fat tend to exhibit a wider range of protein conte
   height="600"
   frameborder="0"
 ></iframe>
+
+Recipes with higher scores have relatively more protein per unit of carbohydrates and fat, indicating that they might be healthier in terms of promoting protein intake while keeping fats and carbohydrates in check.
 
 ---
 
